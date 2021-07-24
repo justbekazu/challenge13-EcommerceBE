@@ -5,9 +5,11 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
     "watch": "nodemon server.js",
-    "seed": "node seeds/index.js"
+    "seed": "node seeds/index.js",
+    "start": "react-scripts start", 
+  "build": "react-scripts build", 
+  "build:staging": "env-cmd -f .env.staging react-scripts build"
   },
   "repository": {
     "type": "git",
